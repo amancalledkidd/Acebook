@@ -16,7 +16,7 @@
     background-color: var(--bg);
     padding: 0 1rem;
     border-bottom: var(--border);
-    --bg: #812CFF;
+    --bg: #5632FA;
     --bg-accent: #525357;
     --text-colour: white;
     --nav-size: 60px;
@@ -24,6 +24,7 @@
     --border: 1px solid #525357;
     --speed: 500ms;
     position: fixed;
+    z-index: 1;
 }
 
 .navbarNav {

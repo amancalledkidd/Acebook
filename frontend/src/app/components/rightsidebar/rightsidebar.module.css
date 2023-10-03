@@ -1,13 +1,11 @@
 .rightSidebar {
+    color: black;
     top: 25%; 
     left: 76%;
     width: 250px; 
     height: calc(100% - 25% - 50px); 
-    background-color: #272626; 
-    border-left: 10px solid #585858;
-    border-right: 10px solid #585858;
-    border-top: 10px solid #585858;
-    border-bottom: 10px solid #585858;
+    background-color: #ffffff;; 
+    border: 1px solid #5632fa;
     padding: 10px; 
     overflow-y: auto;
     display: block;
@@ -15,5 +13,8 @@
     align-items: center;
     position: fixed;
     top: 16%;
-    z-index: -1;
+    z-index: 0;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    scrollbar-color: #5632fa #ffffff;
 }

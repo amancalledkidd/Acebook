@@ -67,7 +67,7 @@ const LikeButton = ({ post, token, setToken }) => {
     return (
         <div id='like-container' className={"like-container"}>
             <button id='like-button' className={styles.likeButton} onClick={handleLike}>
-                {liked ? "Unlike" : "Like"} ({likes})
+                {liked ? 'Unlike' : "Like"} ({likes})
             </button>
         </div>
     );

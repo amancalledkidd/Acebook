@@ -7,20 +7,23 @@
 } */
 
 .newsTitle {
-    color: #fff;
+    color: #5632fa;
     font-size: 20px;
     font-weight: 600;
+    scrollbar-color: #5632fa #ffffff;
 
 }
 
 .contents {
-    color: #fff;
+    color: #060606;
     font-size: 20px;
     font-weight: 600;
+    scrollbar-color: #5632fa #ffffff;
 }
 
 .articleTitle {
-    color: #fff;
+    color: #000000;
     font-size: 20px;
     font-weight: 600;
+    scrollbar-color: #5632fa #ffffff;
 }
