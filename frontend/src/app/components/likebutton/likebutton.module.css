@@ -1,5 +1,24 @@
+.likeButton {
+  background: transparent;
+  border: none;
+}
+
 .likeButton svg {
   width: 24px;
   height: 24px;
-  color: tomato;
+}
+
+.likeButton:hover {
+  cursor: pointer;
+  filter: brightness(1.5);
+}
+
+.likeButton:hover svg {
+  width: 24px;
+  height: 24px;
+  fill: rgb(215, 32, 0);
+}
+
+.likeButton:focus {
+  outline: none;
 }

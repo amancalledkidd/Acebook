@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from './likebutton.module.css'
+import { ReactComponent as RedHeartIcon } from '../../../images/red-heart.svg';
+import { ReactComponent as BlackHeartIcon } from '../../../images/heart.svg';
 
 const LikeButton = ({ post, token, setToken }) => {
     const [likes, setLikes] = useState(post.likes);
@@ -66,10 +68,15 @@ const LikeButton = ({ post, token, setToken }) => {
 
     return (
         <div id='like-container' className={"like-container"}>
-            <button id='like-button' className={styles.likeButton} onClick={handleLike}>
-                {liked ? 'Unlike' : "Like"} ({likes})
-            </button>
-        </div>
+    <button id='like-button' className={styles.likeButton} onClick={handleLike}>
+        {liked ? (
+            <RedHeartIcon className={styles.redheartbutton} />
+        ) : (
+            <BlackHeartIcon />
+        )}
+    </button>
+</div>
+
     );
 }
 
