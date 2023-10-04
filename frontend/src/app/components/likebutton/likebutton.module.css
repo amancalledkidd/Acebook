@@ -1,8 +1,5 @@
-.likeButton {
-  background-color: #f5acf5;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-  padding: 2px;
+.likeButton svg {
+  width: 24px;
   height: 24px;
+  color: tomato;
 }

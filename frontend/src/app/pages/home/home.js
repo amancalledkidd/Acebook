@@ -2,13 +2,9 @@ import React, { useEffect, useState} from "react";
 import Navbar from "../../components/navbar/navbar";
 import Feed from "../../components/feed/Feed";
 import RightSidebar from "../../components/rightsidebar/RightSideBar";
-import SteamNewsList from "../../components/steamnewslist/SteamNewsList";
 import Submit from "../../components/submit/submit";
 import styles from "./home.module.css"
 import Friends from "../../components/friends/friends";
-import ProfilePic from "../../components/profilePic/profilePic";
-import PhotoAlbum from "../../components/photoAlbum/photoAlbum";
-import AddFriend from "../../components/addfriend/addfriend";
 import NavbarPlaceholder from "../../components/navbarPlaceholder/navbarplaceholder";
 
 const Home = ({ navigate }) => {

@@ -1,0 +1,18 @@
+.heart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 300ms;
+    text-decoration: none;
+    color: black;
+}
+
+.heart-button svg {
+    height: 25px;
+    width: 25px;
+}
+
+.heart-button:hover {
+    filter: brightness(1.5);
+    color: red;
+}
