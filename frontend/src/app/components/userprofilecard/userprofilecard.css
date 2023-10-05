@@ -1,0 +1,40 @@
+.userCard {
+    width: 60%;
+    margin: 20px;
+    border-radius: 4px;
+    padding-bottom: 20px;
+    background: white;
+    z-index: 0;
+}
+
+.gradient-header {
+    background: linear-gradient(45deg, #5632FA, #9B86F1);
+    color: white;
+    height: 100px;
+    border-radius: 4px 4px 0 0;
+}
+
+.profile-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.profile-down img {
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -75px;
+    padding: 5px;
+    background: white;
+}
+.profile-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.profile-description {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 10px;
+    text-align: center;
+}

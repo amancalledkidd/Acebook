@@ -3,6 +3,7 @@ import Navbar from "../../components/navbar/navbar";
 import PhotoAlbum from "../../components/photoAlbum/photoAlbum";
 import NavbarPlaceholder from "../../components/navbarPlaceholder/navbarplaceholder";
 import styles from './photogallery.module.css'
+import UserProfileCard from "../../components/userprofilecard/userprofilecard";
 
 const Gallery = ({ navigate }) => {
 

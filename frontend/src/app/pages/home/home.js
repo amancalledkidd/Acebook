@@ -6,6 +6,7 @@ import Submit from "../../components/submit/submit";
 import styles from "./home.module.css"
 import Friends from "../../components/friends/friends";
 import NavbarPlaceholder from "../../components/navbarPlaceholder/navbarplaceholder";
+import UserProfileCard from "../../components/userprofilecard/userprofilecard";
 
 const Home = ({ navigate }) => {
   
@@ -39,13 +40,21 @@ const Home = ({ navigate }) => {
       <>
         <Navbar logout={logout} user = {user}/>
         <NavbarPlaceholder/>
-        <div id='homepagae' className={styles.homepage}>
+        <div id='homepage' className={styles.homepage}>
           <h1>GameBook {user.username}</h1>
           <Submit setPosts={setPosts} token={token} setToken={setToken}/>
           <div id='homepage-content' className={styles.content}>
-            <Friends token={token} setToken={setToken}/>
+          <div id='homepage-left' className={styles.left}>
+              <UserProfileCard user = {user}/>
+              <Friends token={token} setToken={setToken}/>
+          </div>
+          <div id='homepage-feed' className={styles.feed}>
             <Feed posts={posts} setPosts={setPosts} logout={logout} token={token} setToken={setToken}/>
+          </div>
+          <div id='homepage-right' className={styles.right}>
             {<RightSidebar />}
+          </div>
+            
             
           </div>
         </div>
