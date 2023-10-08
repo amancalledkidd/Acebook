@@ -1,16 +1,4 @@
-# Acebook
-
-In this project, you are tasked with working on an existing application. A significant part of the challenge will be to familiarise yourself with the codebase you've inherited, as you work to **improve and extend** it.
-
-## Documentation
-
-[More documentation of the codebase and its architecture can be found here.](./DOCUMENTATION.md) It's recommended you all read this _after making sure the whole setup below worked for everyone_. Then work together on a diagram describing how the application works.
-
-[A template Miro board for your diagrams can be found here.](https://miro.com/app/board/uXjVPqNzFfc=/?share_link_id=360271550320) Make sure your validate your diagrams with your coach.
-
-## Card wall
-
-REPLACE THIS TEXT WITH A LINK TO YOUR CARD WALL
+# Gamebook
 
 ## Quickstart
 
