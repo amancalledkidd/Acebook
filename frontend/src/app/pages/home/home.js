@@ -38,25 +38,33 @@ const Home = ({ navigate }) => {
   if(token) {
     return(
       <>
-        <Navbar logout={logout} user = {user}/>
-        <NavbarPlaceholder/>
-        <div id='homepage' className={styles.homepage}>
+      <div id='homepage' className={styles.homepage}>
+
+        <nav id="header" className={styles.header}>
+          <Navbar logout={logout} user = {user}/>
+          <NavbarPlaceholder/>
           <h1>GameBook {user.username}</h1>
-          <Submit setPosts={setPosts} token={token} setToken={setToken}/>
-          <div id='homepage-content' className={styles.content}>
-          <div id='homepage-left' className={styles.left}>
-              <UserProfileCard user = {user}/>
-              <Friends token={token} setToken={setToken}/>
-          </div>
-          <div id='homepage-feed' className={styles.feed}>
-            <Feed posts={posts} setPosts={setPosts} logout={logout} token={token} setToken={setToken}/>
-          </div>
-          <div id='homepage-right' className={styles.right}>
-            {<RightSidebar />}
-          </div>
+        </nav>
+
+        <section id='homepage-left' className={styles.left}>
+            <UserProfileCard user = {user}/>
+            <Friends token={token} setToken={setToken}/>
+        </section>
+
+        <main id='homepage-feed' className={styles.main}>
+              <Submit setPosts={setPosts} token={token} setToken={setToken}/>
+              <Feed className={StyleSheet.feed} posts={posts} setPosts={setPosts} logout={logout} token={token} setToken={setToken}/>
+        </main>
+
+        
+        
+        <aside id='homepage-right' className={styles.right}>
+          {<RightSidebar />}
+        </aside>
             
-            
-          </div>
+        <footer id='homepage-footer' className={styles.footer}>
+        </footer>
+        
         </div>
       </>
     )
